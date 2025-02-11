@@ -7,7 +7,7 @@ public class LaunchBrowser {
     public static void main(String[] args) {
         WebDriver driver =new FirefoxDriver();
         driver.manage().window().maximize();
-        driver.get("https://mvnrepository.com/");
+        System.out.println(driver.getCurrentUrl());
         driver.quit();
     }
 }
